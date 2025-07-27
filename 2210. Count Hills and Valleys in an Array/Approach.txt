@@ -1,0 +1,1 @@
+This can be solved easily in n^2. But if we want to do it in n then we will have to think a bit. The easiest way would be to modify the array such that no element is surrounded by equal elements. Then you can simply find all the peaks and the non-peaks(which in this case are the valleys) in this new array. That will be our answer.

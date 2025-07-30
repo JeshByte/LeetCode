@@ -1,0 +1,1 @@
+AND always decreases the result. So in an array, the maximum possible AND value of any subarray will be equal to its max element. So this question gets simplified to just find the longest subarray consisting of only the maximum element of the array. 

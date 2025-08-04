@@ -1,0 +1,1 @@
+The constraints allow a brute force solution. So just brute force all the possible combinations to find the most optimal one.

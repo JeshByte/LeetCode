@@ -1,0 +1,1 @@
+The question basically simplifies to finding the longest subarray which consists of atmost 2 unique elements. This can be done using sliding window.

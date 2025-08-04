@@ -1,0 +1,1 @@
+The constraints don't allow a brute force solution. As here we need to process range queries and the array will remain static throughout, we can use Mo's algorithm to process the queries. We can use maps and sets to keep track of the mode value of the active subarray for each query.

@@ -1,0 +1,1 @@
+Constraints allow a n^2 solution so just simulate what the problem says.

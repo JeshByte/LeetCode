@@ -1,0 +1,5 @@
+So at every step, we need to partition the range into 2 parts. When we do that, the current non-leaf node created will have the value of the product of the max value from the first range and the same from the second range. The rest of the values can be found by recursively applying this same operation on the 2 new ranges formed. So our dp state and transition will be - 
+- dp[i][j] = minimum sum of non-leaf node values between i and j
+- dp[i][i] = 0 when there is a single node i.e. a leaf node(base case)
+- dp[i][j] = min(dp[i][k]+dp[k+1][j]+max(i,k)*max(k+1,j)) for all k between i and j where max(i,j) is the max value in the given range. Here the flow of i is n-1->0 and j is i+1->n-1
+- dp[0][n-1] = final problem to be solved

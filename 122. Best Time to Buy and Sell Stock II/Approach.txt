@@ -1,0 +1,5 @@
+So here we can buy and sell multiple times but can hold only one share at a time. So this means we can't buy 2 shares back to back. So lets say we have a flag buy, which is 1 if we can buy and 0 if we can't. Thus when buy=1, we have the choice to buy or skip. Similarly when buy=0, we have the choice to sell or skip. We can represent buying a share by adding the -ve of the share and the selling of the share by adding the +ve value of the share. So this will be our dp state and transition - 
+- dp[i][buy] = stores the max profit when considering the ith share where buy=0 means we are already holding a share and buy=1 means we are not holding any share.
+- dp[n-1][0]=price[n-1] and dp[n-1][1]=0 is the base case.
+- dp[i][0]=max(prices[i]+dp[i+1][1],dp[i+1][0]) and dp[i][1]=max(-prices[i]+dp[i+1][0],dp[i+1][1]) are the transitions
+- dp[0][1] = final subproblem

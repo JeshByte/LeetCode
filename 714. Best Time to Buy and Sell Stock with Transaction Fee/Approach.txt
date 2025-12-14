@@ -1,0 +1,1 @@
+Same as the case of best time to buy and sell stock when we can do multiple transactions. The only caveat here is that you need to add the extra (-fees) to our net profit whenever we are selling a stock. Other than that the dp states and transitions remain same.

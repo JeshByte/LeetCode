@@ -1,0 +1,5 @@
+So we can structure our dp like this such that dp[i][j] = length of longest common subsequence that can be made using characters till the ith position in text1 and characters till jth position in text. So the transitions will be - 
+- dp[0][j]=0 and dp[i][0]=0 for all i and j(base condition)
+- if text[i]=text[j], then we will take the character from both the strings so dp[i][j]=1+dp[i-1][j-1](we add 1 to account for the new character thats taken now)
+- or else, we will need to take a character from either of the strings so dp[i][j]=max(dp[i-1][j],dp[i][j-1])(we consider both the cases)
+- dp[n][m] is the final subproblem where n is the length of text1 and m is the length of text2 

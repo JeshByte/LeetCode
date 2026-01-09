@@ -1,0 +1,1 @@
+This can be easily solved using the logic for LCS. If we take the string and its reverse, any common subsequence will always be palindromic. So we just need to find the longest such subsequence. Therefore, just apply LCS on the given string and its reverse.

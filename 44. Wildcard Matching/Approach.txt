@@ -1,0 +1,7 @@
+Here also we need to follow a LCS like approach. The states and transitions will be - 
+- dp[i][j] = whether the prefix of the word till i matches with the prefix of the pattern till j(0 means false and 1 means true, we are assuming the entire dp table is initialised with 0s)
+- dp[n][j] = 1 where j<=m and j>=len and len is the length of the asteric suffix in the pattern. This means even if the word has been matched and the astericks are remaining in the pattern, we can simply replace them with empty strings thus making the matching still possible.
+- if p[j]=? then dp[i][j]=dp[i+1][j+1] as they can be matched.
+- if p[j]=* then dp[i][j]=dp[i][j+1] or dp[i+1][j]. This shows two situations where we either replace * with an empty string or *k where k is the ith character in the word to be matched.(as we are replacing it with a * again we are able to reproduce the *'s ability to match with any sequence of any length while still handling one character at a time thus reducing the branching)
+- if p[j] is a character and p[j]=s[i] then also dp[i][j]=dp[i+1][j+1] or else it is equal to one because further matching wont be possible then.
+- dp[0][0] is the final subproblem becuase initially the entire word needs to be matched with the entire pattern.

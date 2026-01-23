@@ -1,0 +1,1 @@
+We just have to apply the logic of Largest Rectangle in histogram on a heights vector that we update after traversing each row of the matrix top to bottom. The maximum area will be the final answer.
